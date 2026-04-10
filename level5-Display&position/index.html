@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and position</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Display property</h1>
+    <p>block element (starts on a new line, takes up all horizontal space, can have margin,padding ,width and height): div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, table, tr, td, th, form, header, footer, section, article, nav, aside,main .</p>
+    <p>inline element (does not start on a new line, only takes up as much width as necessary, cannot have margin,padding ,width and height : can't set the size easily): span, a, img(inline replaced element), strong, em, code.</p>
+
+<h3>Display properties (inline , inline-block and block ;(none: gayab ho janda ) )</h3>
+<div style="display: inline; background-color: lightblue;">This is an inline div.</div>
+<div style="display: block; background-color: lightgreen;">This is a block div.</div>
+<div style="display: inline-block; background-color: lightcoral;">This is an inline-block div.</div>
+NOTE :- 1.] But, the default display value of div is block, so  if we set display: inline; it will behave like a inline element.  <br>
+
+
+2.] Also , if we makw the div inline element . Then , we cannot chnage its width and height . As , we can't change the height and width of inline element .
+3.] Inline - Block : It does that it behaves like an inline element but we can also set its height and width as the block element .
+
+<h1>Responsive Design</h1>
+Adpats layout to different screen sizes , flexible layouts , optimizes images and assests and enhances user experience on mobile and dekstop .
+<br> <b> To make responsive website we use RELATIVE UNITS </b>
+ 
+
+<h3> 1.] Percenatge % ( Relative Unit )</h3>
+Percentage is a relative unit that takes the size (in perceantage ) of their parent element .
+
+<div id="first">First 
+
+    <div id="second">Second</div>
+</div>
+
+<h3>2.] EM ( Relative Unit )</h3>
+<ul><li>
+em (generally dont have any specific full form ) is a relative unit that is based on the font size of the parent element. <li>1em is equal to the current font size of the parent element.</li>
+<li> If the font size of the element is 16px, then 1em is equal to 16px. If we set the font size of an element to 2em, it will be twice the size of the current font size. If we set it to 0.5em, it will be half the size of the current font size.</li>
+</li></ul>
+ 
+<div class="first">First
+    <div class="second">Second</div>
+</div>
+<h3>3.] REM ( Relative Unit )</h3>
+<ul><li>rem (root em) is a relative unit that is based on the font size of the root element (html).</li>
+<li>1rem is equal to the current font size of the root element.</li>
+<li>If the font size of the root element is 16px, then 1rem is equal to 16px.</li>
+<li>Example: If the root font size is 16px, then 1rem = 16px, 2rem = 32px, etc.</li>
+<li>synatx : * body { font-size: 16px; means font size of whole body  } . Now , #first{ font size : 2rem; means the first id named element has twice the size of root element i.e. 32px }</li>
+</ul>
+
+<h3>4.] VW/VH (view width/height)</h3>
+<ol><li>vw (view width) is a relative unit that is based on the width of the viewport.</li>
+<li>1vw is equal to 1% of the viewport width. 50vw would be 50% of the viewport width.</li>
+<li>vh (view height) is a relative unit that is based on the height of the viewport.</li>
+<li>1vh is equal to 1% of the viewport height. 50vh would be 50% of the viewport height.</li>
+</ol>
+
+
+<div id="third">This is the responsive div that takes up 50% of the viewport width and 50% of the viewport height.  </div>
+
+
+
+<br><br> yeah ; thats a good approach to make a website .
+<h1>POSITION PROPERTY </h1>
+<h3>1.] Static Positioning (default)</h3>
+<ul><li>Elements are positioned according to the normal flow of the document.</li>
+<li>Top, right, bottom, left properties have no effect.</li>
+</ul>
+<h3>2.] Relative Positioning</h3>
+<ul><li>Elements are positioned relative to their normal position.</li>
+    <li>Like : jithe apna element hona chaida c  us toh 10px thora right nu krdo .</li>
+</ul>
+<h3>3.] Absolute Positioning</h3>
+<ul><li><b>In absoulute positioning ; the element start from the left top corner of the page(or their nearest positioned ancestor) .</b></li></ul>
+
+<h3>4.] Fixed Positioning</h3>
+<ul><li>Elements are positioned relative to the viewport.</li>
+    
+    <li>They remain in the same position even when the page is scrolled.</li>
+<li>Like : apa jihna marji scroll karde rehiye oh chiz uthe hi fix rehni .</li>
+<li><b><i>Example :- NAVIGATION BAR ( fix hi rehndi screen de top par ) ; HELP OPTION ( page de bottom pr fix rehndi )</i></b></li>
+</ul>
+
+
+<div class="div" id="one">Static</div>
+<div class="div" id="two">Relative</div>
+<div class="div" id="three">Absolute</div>
+<div class="div" id="four">Fixed</div>
+
+
+
+NOTE :- 1.] Static Positioning (Div): Koi fark ni pena because static is default position for all the elements . <br>
+2.] Relative Positioning (Div): Ideally Jithe hona c uthe toh thora thale and right nu shift ho jana (eh apne app nu reference manda) . <b><i><u>Jithe hona chaida c us toh relative .</u></i></b><br>
+3.] Absolute Positioning (Div): Jithe marji shift kar sakde ho ( <u>left top corner of the page toh start hona </u>) . But , if we have any parent element with position relative then it will start from there . <br>
+<b>But ; eh DOM ( page ) toh bahar ho janda . Jithe apa nu page which overlapping show karni howe uthe kaam aunda eh (bcz, eh overlap karda janda )</b><br>
+<br><br>
+<b>Top : da matlab top toh kina shadna , bottom : bottom toh kina shadna , right : right toh kina shadna , left : left toh kina shadna </b>
+
+<h3>4.] Z-index</h3>
+<ul><li>z-index is a CSS property that controls the stacking order of elements on a web page.</li>
+<li>Elements with a higher z-index value will be displayed in front of elements with a lower z-index value.</li>
+<li>It only works on positioned elements (elements with a position value of relative, absolute, fixed, or sticky) bcz static elements cannot be stacked.</li>
+<li>Example: If you have two overlapping elements, you can use z-index to control which one appears on top. An element with a z-index of 2 will appear in front of an element with a z-index of 1.</li>
+<li> It have Integer value : -1, 0, 1, 2, ...</li>
+</ul>
+
+<div style="background-color: aqua;border: 5px solid black;height: 230px; width: 200px; ">
+    <div id="box1">z-index 1</div>
+    <div id="box2">z-index 2</div>
+</div>
+</body>
+</html>

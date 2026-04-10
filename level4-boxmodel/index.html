@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BOX MODEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Box model</h1>
+    <ol><li>
+        <p>Content: The innermost part of the box where the actual content (text, images,video ,font etc.) is displayed.</p>
+    </li>
+<li>
+        <p>Padding: The space between the content and the border of the box.Sapce inside the itself element . (Apne box de andaro-andar hi spacing karni)</p>
+    </li>
+<li>
+        <p>Border: The line that surrounds the padding and content of the box.</p>
+    </li>
+<li>
+        Margin: The space outside the border of the box, separating it from other elements.space form the other elements(Apne box de bahar  spacing karni hor items toh) . Note :- The bigger value between the two margin items the bigger value will be applied.
+    </li>
+</ol>
+<img style="height: 400px;" src="https://www.acil.in/wp-content/uploads/2021/11/boxmodel.jpg" alt="Box Model Image"><br>
+NOTE :- 1.] Padding is defined in the clockwise direction (top, right, bottom, left) and can be set using the padding property in CSS. <br> 2.] Border can be styled using properties like border-width, border-style, and border-color. <br> 3.] Margin can also be defined in the clockwise direction (top, right, bottom, left) and can be set using the margin property in CSS.
+
+<div id="first"> Testing div </div>
+<div id="second"> Testing div - II </div>
+
+<h3>Border</h3>
+<p>Border is the line that surrounds the padding and content of the box. It can be styled using properties like border-width, border-style, and border-color. The border can be solid, dashed, dotted, or double, among other styles. The width of the border can be specified in pixels, ems, or other units, and the color can be defined using color names, hex codes, or RGB values.</p>
+border= border-width border-style border-color <br>
+Example: border: 2px solid red; <br>
+<h3>Border box property <b>[box sizing : border-box]</b></h3>
+<p>The border-box property is a CSS box model that includes the padding and border within the total width and height of an element. When using border-box, the width and height of an element are calculated to include the content, padding, and border, which can simplify layout calculations and prevent unexpected sizing issues. This is in contrast to the default content-box model, where the width and height only include the content, and padding and border are added on top of that.</p>
+border radius property is used to create rounded corners on elements. It can be applied to any element that has a border, and it allows you to specify the radius of the corners. The syntax for the border-radius property is as follows:
+border-radius: [top-left] [top-right] [bottom-right] [bottom-left];
+</body>
+</html>

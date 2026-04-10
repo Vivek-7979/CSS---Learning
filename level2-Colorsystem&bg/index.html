@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header> 
+        <nav style="color: white;"> This is the navigation bar inside the header .</nav>
+    </header>
+    <main>
+   <h1>1.] Background Color</h1>
+   <ol><li>
+    set the background color of the element .
+   </li>
+<li>jihna background hona element da (inline or block-line ) usde bg pr color lag jana . </li></ol> 
+
+<h2 style="color: aliceblue;background-color: black;">Colour 1 </h2>
+<h2 style="color: aliceblue;background-color:black;">Colour 2</h2>
+<button style="color: aliceblue; background-color: black;">Click Me</button>
+
+<h1>2.] RGB : with the help of these 3 colours we can make any colour in the world .</h1>
+<ol>
+    <li>It consists of three values: red, green, and blue</li>
+    <li>Utilized as rgb(r,g,b)</li>
+    <li>Where r, g and b are values between 0 and 255 .</li>
+    <li>like :<ol><li> rgb(255, 0, 0) for red </li>
+<li>rgb(0, 255, 0) for green </li>
+<li>rgb(0, 0, 255) for blue </li></ol>
+</li>
+</ol>
+
+
+<h1>3.] HEX : A hexadecimal color </h1>
+<ol><li>
+    It is a 6-digit code(#RRGGBB) where  that represents a color in the RGB color model.
+</li>
+<li>
+    Each pair of digits (RedRed, GreenGreen, BlueBlue) represents the intensity of red, green, and blue components of the color, respectively.
+</li>
+<li>
+    Here , 1 to 9 are 10 digits and A to F are 6 digits (total 16 digits) .
+</li>
+<li>
+    It is used with using the # red red green green blue blue
+</li>
+</ol>
+
+<h1>4.] Alpha Channel</h1>
+<ol><li>
+    It is the extension of the RGB model that includes alpha for opacity control (o to 1 range ) .
+</li>
+<li>like : rgba(255, 0, 0, 0.5) for semi-transparent red</li>
+</ol>
+<div style="background-color: rgba(255,0,0,0.1);" id="first">Less opacity</div>
+<div style="background-color: rgba(255,0,0,0.5);" id="middle">Semi-Opaque</div>
+<div style="background-color: rgba(255,0,0,1);" id="second">Most opacity</div>
+<hr>
+
+<h1>5.] Absolute units</h1>
+<ol><li>px (pixels ) : The px unit represents pixels on the screen <ol><li> It is fixed-size units </li><li> It is the most commonly used unit for specifying sizes in CSS.</li>
+<li>
+    It has the disdvantage of not being responsive to different screen sizes and resolutions, which can lead to issues with accessibility and usability on various devices.
+</li>
+<li> Matlab : jis screen pr zaida pixel hone us pr image fer choti dikhni , jis screen pr ghat pixel hone us pr fer image vaddi dikhni</li></ol></li></ol>
+
+
+<h1>6.] Background Image</h1>
+<ol><li>
+    Synatx of background image : background-image: url("image.jpg");
+</li>
+<li>
+    Control image repeatation by using : background-repeat: repeat | no-repeat | repeat-x | repeat-y;
+</li>
+<li>
+    Adjust the position of the background image using : background-position: top | bottom | left | right | center;
+</li>
+
+<li>
+   Manipulate background-size: cover(scale the image to cover the entire background area, potentially cropping it) or background-size: contain (scale the image to fit within the background area without cropping, maintaining its aspect ratio).
+</li>
+<li>Background Attachment: Sets whether the background image scrolls with the content or remains fixed.</li>
+</ol>
+<div  id="bgimage"> </div>
+
+
+<h1> 7.] Visibility property</h1>
+<ol><li>
+    It controls whether an element is visible or hidden on the page.</li>
+<li>Even when hidden the element still takes up space .</li>
+<li> Hidden elements are not accessible to user interaction.</li></ol>
+like : <div style="visibility: hidden; color: blue;height: 70px; width: 70px">This text is hidden but still takes up space.</div>
+<div id="visible" style="height: 70px; width: 70px;background-color: aquamarine;">This text is visible.</div>
+<hr>
+<div id="practice"> This is a practice div.</div>
+
+</main>
+<footer> This is the footer .</footer>
+
+
+
+</body>
+</html>

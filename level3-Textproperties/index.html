@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BJ+Cree:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>1.] Text align property</h1>
+    <ul><li>
+        <p>Text-align property is used to set the horizontal alignment of text in an element. It can take the following values:</p>
+        <ul>
+            <li>left: Aligns the text to the left.</li>
+            <li>right: Aligns the text to the right.</li>
+            <li>center: Centers the text.</li>
+            <li>justify: Justifies the text, adding extra space between words as necessary to align both edges of the text with the left and right margins.</li>
+        </ul>
+    </li></ul>
+    <div style="height: 100px;width: 100px;text-align: left; background-color: brown;" id="left"> Box</div>
+    <div style="height: 100px;width: 100px;text-align: right; background-color: forestgreen;" id="right"> Box</div>
+    <div style="height: 100px;width: 100px;text-align: center; background-color: purple;" id="center"> Box</div>
+    <div style="height: 100px;width: 100px;text-align: justify; background-color: aqua;" id="justify"> Box to justify </div>
+
+<h1>2.] Text decoration property</h1>
+<ul><li>
+    <p>Text-decoration property is used to set the decoration of text in an element. It can take the following values:</p>
+    <ul>
+        <li>none: Removes any text decoration.</li>
+        <li>underline: Adds a line under the text.</li>
+        <li>overline: Adds a line over the text.</li>
+        <li>line-through: Adds a line through the text.</li>
+    </ul>
+</li></ul>
+<h3 style="text-decoration: none;">None</h3>
+<h3 style="text-decoration: underline;">Underline</h3>
+<h3 style="text-decoration: overline;">Overline</h3>
+<h3 style="text-decoration: line-through;">Line-through</h3>
+<a href="#" style="text-decoration-style: wavy;">Link</a>
+<h3 style=" text-decoration:underline; text-decoration-color: red;">Text decoration color property</h3>
+
+
+<h1>3.] Text transform property</h1>
+<ol>
+    <li>none: Does not transform the text.</li>
+    <li>uppercase: Converts the all text to uppercase.</li>
+    <li>lowercase: Converts the all text to lowercase.</li>
+    <li style="text-transform: capitalize;">capitalize: Capitalizes the first letter of each word.</li>
+</ol>
+
+<h1>4.] Line height property</h1>
+<ol>
+    <li>none: Does not set a specific line height.</li>
+    <li>normal: Sets a default line height.</li>
+    <li>number: Sets the line height to a multiple of the font size.</li>
+    <li>length: Sets the line height to a specific length (e.g., 1.5em, 20px).</li>
+</ol>
+NOTE:- The line height = center of the first line to the center of the second line .
+
+<h1>5.] Font property</h1>
+<h3>A.] Font size : It is just used to control the size of the text or font.(where h1 to h6 tells us the importance of the text)</h3>
+<ol><li style="font-size: 10px;">
+    10px: Sets the font size to 10 pixels.
+</li>
+<li style="font-size: 16px;">16px: Sets the font size to 16 pixels.</li>
+<li style="font-size: 40px;">40px: Sets the font size to 40 pixels.</li>
+</ol>
+
+<h3>B.] Font weight : It is used to control the thickness or boldness of the text. { The value lies between 100 and 900 }</h3>
+<ol>
+    <li style="font-weight: normal;">normal: Sets the font weight to normal.</li>
+    <li style="font-weight: bold;">bold: Sets the font weight to bold.[700]</li>
+    <li style="font-weight: 100;">100: Sets the font weight to a thin weight.</li>
+    <li style="font-weight: 200;">200: Sets the font weight to a light weight.</li>
+    <li style="font-weight: 300;">300: Sets the font weight to a book weight.</li>
+    <li style="font-weight: 400;">400: Sets the font weight to a regular weight.</li>
+    <li style="font-weight: 500;">500: Sets the font weight to a medium weight.</li>
+    <li style="font-weight: 600;">600: Sets the font weight to a semi-bold weight.</li>
+    <li style="font-weight: 700;">700: Sets the font weight to a bold weight.</li>
+    <li style="font-weight: 800;">800: Sets the font weight to an extra-bold weight.</li>
+    <li style="font-weight: 900;">900: Sets the font weight to a black weight.</li>
+</ol>
+<h3>C.]Font style property</h3>
+<ol>
+    <li style="font-style: normal;">normal: Sets the font style to normal.</li>
+    <li style="font-style: italic;">italic: Sets the font style to italic.</li>
+    <li style="font-style: oblique;">oblique: Sets the font style to oblique.</li>
+</ol>
+<h1>6.] Font Family</h1>
+<ol>
+    <li>Defines which font to use for the text. It can take a specific font name (e.g., Arial, Times New Roman) or a generic font family[jo ki hundi hai available] (e.g., serif, sans-serif, monospace).</li>
+     <li>If the specified font is not available, the browser will use a fallback font from the same family(called- fallback mechanism).</li>
+
+<li> Web Safe Fonts : These are a set of fonts that are widely available across different operating systems and browsers. Examples include Arial, Times New Roman, Courier New, Verdana, and Georgia. Using web safe fonts ensures that your text will be displayed consistently for most users.</li>
+</li></ol>
+
+Example : - <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="fontfamily">'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif . This means first use the franklin font it it is not available.Then , use the Arial Narrow and so on .</div>
+<h1>7.] Geeting fonts from the internet (like : google fonts )</h1>
+<h3 id="googlefonts">This is the different font downloaded from the internet . In this , first we paste the link of the font and then we write the rule inside the font family section of the element in which we have to apply the font .</h3>
+
+
+<h1>8.] Icons using Fonts ( by using : fontawesome.com or google fonts )</h1>
+<p>Icons can be added to a webpage using fonts, such as Font Awesome or Google Fonts. These font libraries provide a wide range of icons that can be easily integrated into your website. To use icons from these libraries, you typically need to include the appropriate CSS file in your HTML document and then use specific classes to display the desired icons.</p>
+
+
+  <!-- solid style -->
+  <i class="fa-solid fa-user"></i>
+
+  <!-- regular style -->
+  <i class="fa-regular fa-user"></i>
+
+  <!-- light style -->
+  <i class="fa-light fa-user"></i>
+
+  <!-- thin style -->
+  <i class="fa-thin fa-user"></i>
+
+  <!-- duotone style -->
+  <i class="fa-duotone fa-solid fa-user"></i>
+
+  <!-- sharp solid style -->
+  <i class="fa-sharp fa-solid fa-user"></i>
+
+  <!-- sharp regular style -->
+  <i class="fa-sharp fa-regular fa-user"></i>
+
+  <!-- sharp light style -->
+  <i class="fa-sharp fa-light fa-user"></i>
+
+  <!-- sharp thin style -->
+  <i class="fa-sharp fa-thin fa-user"></i>
+
+  <!-- all new sharp duotone style -->
+  <i class="fa-sharp-duotone fa-solid fa-user"></i>
+
+  <!--brand icon-->
+  <i class="fa-brands fa-github-square"></i>
+
+
+
+  <!-- solid style -->
+  <i class="fa-solid fa-user"></i>
+
+  <!-- regular style -->
+  <i class="fa-regular fa-user"></i>
+
+  <!-- light style -->
+  <i class="fa-light fa-user"></i>
+
+  <!-- thin style -->
+  <i class="fa-thin fa-user"></i>
+
+  <!-- duotone style -->
+  <i class="fa-duotone fa-solid fa-user"></i>
+
+  <!-- sharp solid style -->
+  <i class="fa-sharp fa-solid fa-user"></i>
+
+  <!-- sharp regular style -->
+  <i class="fa-sharp fa-regular fa-user"></i>
+
+  <!-- sharp light style -->
+  <i class="fa-sharp fa-light fa-user"></i>
+
+  <!-- sharp thin style -->
+  <i class="fa-sharp fa-thin fa-user"></i>
+
+  <!-- all new sharp duotone style -->
+  <i class="fa-sharp-duotone fa-solid fa-user"></i>
+
+  <!--brand icon-->
+  <i class="fa-brands fa-github-square"></i>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICS </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> There are three types of CSS :-</h1>
+    <h4><ol><li>Inline CSS (applied inside the html tag using the style attribute) :- Generally we don't use this method as it makes the code less maintainable, less reusable and more cluttered.</li>
+        <li>Internal CSS (apply inside the head tag between the  "style" tag ):-More organised than inline , allows some reuse and  hard to manage if the project grows large.</li>
+        <li>External CSS ;  means writing your styles in a separate file and linkking it to your HTML File. (most recommended ; In real life projects it is used mostly as it is resuable , maintainable and applied on multiple pages)</li></ol></h4>
+        <h3 class="note1"> 1.] NOTE :- Inline CSS has the highest priority (mtlb oh hi hona jo inline css vich likhta ; internal ya external css is lagni uthe). </h3>
+   <h3>2.] Then , Internal CSS has the second highest priority and the external CSS has the lowest priority.</h3>
+   
+   <hr>
+   <h2>DOM :- Document Object Model</h2>
+   <h4> The whole webpage is known as the Document . DOM :  It represents the structure of a document as a tree of nodes, where each node is an object representing a part of the document.</h4>
+   <img style="height: 350px;" src="https://www.javascript-kurs.de/bilder/dom-objekt-beispiel-html-seitenstruktur.png" alt="dom structure">
+   
+   
+   <hr>
+    1.] h1(selctor) {<br>
+        property: value;<br>
+    }
+    <br><br>
+    NOTE:- selector is the element you want to style <br>
+    property is the aspect(attribute or characteristic ya chij) of the element you want to change and 
+    <br>value is the new value for that property(or the style you want to apply to the property) like :- red,bold etc.
+<br><hr>
+
+2.] colour property is used to change the text colour(or foreground colour mtlb text da itself) of an element. <br>
+<h3 class="colorproperty">Color proprty : This is the foreground colour property</h3>
+<hr>
+<h3>Types of CSS selectors</h3>
+<ol>
+    <li>Universal Selector [ * ](selects all elements on the page) ; saare hi page pr lag jana ||:- Example :- * {margin: 0; padding: 0;} (this will remove the default margin and padding from all elements)</li>
+    <li>
+Element Selector[ "p" ] (selects all elements of a specific type) :- Example :- p {color: red;} (this will make the text colour of all the paragraphs red)</li>
+
+
+<li>ID Selector[ "#"] (selects the element with a specific ID attribute) It is very unnique . :- Example :- #idname {color: green;} (this will make the text colour of the element with the ID "idname" green)</li>
+<li>Class Selector[ "."] ; it allows grouping of multiple elements (selects all elements with a specific class name) :- Example :- .classname {color: blue;} (this will make the text colour of all the elements with the class "classname" blue)
+</li>
+<li> Grouping Selector[ ","] ; COMMA PAKE LIKHDO OH SAREYAN PR APPLY HO JANI CSS :  it allows applying the same styles to multiple selectors at once. :- Example :- h1, h2, h3 {color: purple;} (this will make the text colour of all h1, h2, and h3 elements purple)</li>
+<li>Descendant Selector[ " " ] ; It selects elements that are descendants of a specified element. :- Example :- div p {color: pink;} (this will make the text colour of all paragraphs that are inside a div element pink)</li>
+</ol>
+NOTE :-<b> ID selector has highest  priority </b>> class selector  > Descendant selector > Grouping selector > Element selector(like selecting the whole element like - whole paragraph , whole h1 tag etc). <br>
+<b>And universal selector has the least priority.</b><hr>
+
+</body>
+</html>
